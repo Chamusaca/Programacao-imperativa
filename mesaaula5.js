@@ -64,7 +64,3 @@ Dica: Investigue se o objeto Math tem entre suas propriedades o número Pi.*/
 function calcCircunferencia(raio){
     return raio*2*Math.PI;
 }
-
-
-
-
