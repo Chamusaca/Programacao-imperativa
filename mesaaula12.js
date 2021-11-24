@@ -25,3 +25,48 @@ function encontrarGanhador(a, b) {
 }
 
 console.log(encontrarGanhador(alicia, bob));
+
+/*********************************************************************/
+
+function digitalHouse(x,y) {
+    for (let i = 0; i <= 100; i++) {
+        if (((i % x) == 0) && ((i % y) == 0))  {
+            console.log("Digital House");
+        } 
+        else if (((i % x) == 0) && ((i % y) != 0)) {
+            console.log("Digital");
+        }
+        else if (((i % x) != 0) && ((i % y) == 0)){
+            console.log("House");
+        }
+        else {
+            console.log(i);
+        }
+    }
+}
+
+digitalHouse(5,7);
+
+/*******************************************************/
+
+function sumArray(vetor) {
+    let soma = 0;
+    for (let i = 0; i < vetor.length; i++) {
+        soma += vetor[i];
+    }
+    return soma;
+}
+
+console.log(sumArray([10, 3, 10, 4]));
+
+/*********************************************************/
+
+function join(vetor) {
+    let frase = "";
+    for (let i = 0; i < vetor.length; i++) {
+        frase += vetor[i];
+    }
+    return frase;
+}
+
+console.log(join(["t","e","s","t","e"]));
